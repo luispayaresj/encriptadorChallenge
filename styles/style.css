@@ -1,5 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+
+    --dark-blue-100: #609ED4 ;
+    --dark-blue-200: #356EA9;
+    --dark-blue-300: #0A3871;
+    --dark-blue-400: #072B61;
+    --dark-blue-500: #052051;
+
+    --light-blue-100: #F3F5FC ;
+    --light-blue-200: #EFF1FA;
+    --light-blue-300: #E9ECF8;
+    --light-blue-400: #AAB2D5;
+    --light-blue-500: #757FB2;
+
+    --gray-100: #CED4DA ;
+    --gray-200: #ADB5BD ;
+    --gray-300: #868E96 ;
+    --gray-400: #495057 ;
+    --gray-500: #343A40 ;
+
+    --fuente-inter : "Inter", sans-serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
 
 body {
-    background-color: #F3F5FC;
+    background-color: var(--light-blue-100);
+}
+.header {
+    margin: 2.5rem 0rem 0rem 2.5rem ;
+}
+
+.zona__encriptacion {
+    margin: 5rem 0rem 0rem 15rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.zona__encriptacion_cuadro_texto {
+    background-color: var(--light-blue-100);
+    border: none;
+    font-family: var(--fuente-inter);
+    font-size: 2rem;
+    color: var(--dark-blue-300);
+    height: 39.688rem;
+    width: 42.5rem;
+}
+
+.zona__encriptacion_botones {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.zona__encriptacion_botones_encriptar {
+    background-color: var(--dark-blue-300);
+    color: #ffffff;
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    text-align: center;
+    width: 332px;
+    height: 67px;
+    border-radius: 24px;
+}
+
+.zona__encriptacion_botones_desencriptar {
+    background-color: var(--light-blue-100);
+    color: var(--dark-blue-300);
+    border-color: var(--dark-blue-300);
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    text-align: center;
+    width: 332px;
+    height: 67px;
+    border-radius: 24px;
+}
+
+.info__de_entrada_texto {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem ;
+    color: var(--gray-400);
+    font-family: var(--fuente-inter);
+    font-size: 0.75rem;
+}
+
+
+
+.footer {
+    height: 2.5rem;
 }

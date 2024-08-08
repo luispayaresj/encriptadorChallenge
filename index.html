@@ -7,8 +7,28 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header class="header"></header>
-    <main></main>
+    <header class="header">
+        <img src="./assets/Logo.png" alt="">
+    </header>
+    <main>
+        <section class="zona__encriptacion">
+            <textarea 
+            name="cuadro_texto" 
+            id="cuadro_texto" 
+            class="zona__encriptacion_cuadro_texto"
+            placeholder="Ingrese el texto aquí"
+            >Ingrese el texto aquí</textarea>
+            <div class="info__de_entrada_texto">
+                <img src="./assets/bi_exclamation-circle-fill.png" alt="icono de excalacion">
+                <p>Solo letras minúsculas y sin acento.</p>
+            </div>
+            <div class="zona__encriptacion_botones">
+                <button class="zona__encriptacion_botones_encriptar">Encriptar</button>
+                <button class="zona__encriptacion_botones_desencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+    </main>
     <footer class="footer"></footer>
 </body>
 </html>
