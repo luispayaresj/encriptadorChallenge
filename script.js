@@ -97,6 +97,18 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Selecciona el botón por su ID y agrega un listener para el evento de clic
+    document.getElementById('resetButton').addEventListener('click', function() {
+        // Selecciona el textarea por su ID
+        const textArea = document.getElementById('cuadro_texto');
+        
+        textArea.value = "";
+
+        document.getElementById("desencriptar_1").style.display = "flex";
+        document.getElementById("desencriptar_2").style.display = "none";
+    });
+});
 
 
 

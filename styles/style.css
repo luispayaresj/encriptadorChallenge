@@ -166,6 +166,11 @@ main {
     font-size: 1.3rem;
 }
 
+.zona__desencriptacion_contenido_2_botones{
+    display: flex;
+    gap: 32px;
+}
+
 .zona__desencriptacion_contenido_mensajes {
     display: flex;
     flex-direction: column;
