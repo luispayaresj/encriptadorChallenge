@@ -104,17 +104,37 @@ main {
     border: none;
     border-radius: 24px;
     display: flex;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    height: 100vh; /* Optional: Full viewport height for vertical centering */
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
 }
 
-.zona__desencriptacion_contenido {
+
+.zona__desencriptacion_contenido_1 {
     display: flex;
     flex-direction: column;
     gap: 32px;
     align-items: center;
     text-align: center;
+}
+
+.zona__desencriptacion_contenido_2 {
+    display: none;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    text-align: center;
+}
+
+.zona__desencriptacion_contenido_2_texto{
+    font-family: var(--fuente-inter);
+    color: var(--gray-400);
+    font-size: 1.5rem;
+    text-align: left;
+    background-color: #ffffff;
+    border: none;
+    width: 336px;
+    height: 700px;
 }
 
 .zona__desencriptacion_contenido_mensajes{

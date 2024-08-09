@@ -17,18 +17,29 @@
             id="cuadro_texto" 
             class="zona__encriptacion_cuadro_texto"
             placeholder="Ingrese el texto aquí"
-            >Ingrese el texto aquí</textarea>
+            ></textarea>
             <div class="info__de_entrada_texto">
                 <img src="./assets/bi_exclamation-circle-fill.png" alt="icono de excalacion">
                 <p>Solo letras minúsculas y sin acento.</p>
             </div>
             <div class="zona__encriptacion_botones">
-                <button class="zona__encriptacion_botones_encriptar">Encriptar</button>
-                <button class="zona__encriptacion_botones_desencriptar">Desencriptar</button>
+                <button 
+                id="encriptarButton"
+                class="zona__encriptacion_botones_encriptar"
+                onclick="encriptar()"
+                >
+                    Encriptar
+                </button>
+                <button 
+                class="zona__encriptacion_botones_desencriptar"
+                onclick="toggleSection('desencriptar_2')"
+                >
+                    Desencriptar
+                </button>
             </div>
         </section>
         <div class="zona__desencriptacion">
-            <section class="zona__desencriptacion_contenido">
+            <section id="desencriptar_1" class="zona__desencriptacion_contenido_1">
                 <img src="./assets/Muñeco.png" alt="Muñeco explorador">
                 <div class="zona__desencriptacion_contenido_mensajes">
                     <p class="zona__desencriptacion_contenido_mensaje1">
@@ -40,9 +51,25 @@
                 </div>
                
             </section>
+            <section id="desencriptar_2" class="zona__desencriptacion_contenido_2">
+               
+                <textarea id="texto__procesado" class="zona__desencriptacion_contenido_2_texto" readonly>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.
+                </textarea>
+
+                <button 
+                class="zona__encriptacion_botones_desencriptar"
+                onclick="copyText()"
+                >
+                    Copiar
+                </button>
+               
+            </section>
         </div>
     </main>
     
     <footer class="footer"></footer>
+
+    <script src="./script.js" defer></script>
 </body>
 </html>
