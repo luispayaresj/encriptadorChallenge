@@ -34,6 +34,32 @@ function encriptar(texto){
     return textoEncriptado;
 }
 
+function desencriptar(texto) {
+
+    let palabras = texto.split(" ");
+    console.log(palabras)
+
+    
+    for (let i = 0; i < palabras.length; i++) {
+        
+        
+        palabras[i] = palabras[i].replace(/ai/g,'a');
+
+        palabras[i] = palabras[i].replace(/enter/g,'e');
+
+        palabras[i] = palabras[i].replace(/imes/g,'i');
+
+        palabras[i] = palabras[i].replace(/ober/g,'o');
+
+        palabras[i] = palabras[i].replace(/ufat/g,'u');
+
+    }
+
+    let textoDesencriptado = palabras.join(" ");
+
+    return textoDesencriptado;
+}
+
 //Espera a que el DOM esté completamente cargado antes de ejecutar el script
 document.addEventListener("DOMContentLoaded", function() {
     // Selecciona el botón por su ID y agrega un listener para el evento de clic
@@ -52,6 +78,27 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("desencriptar_2").style.display = "flex";
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Selecciona el botón por su ID y agrega un listener para el evento de clic
+    document.getElementById('desencriptarButton').addEventListener('click', function() {
+        // Selecciona el textarea por su ID
+        const textArea = document.getElementById('cuadro_texto');
+        // Obtiene el valor del textarea
+        const text = textArea.value;
+
+        
+
+        // Selecciona el div de salida y actualiza su contenido
+        const outputDiv = document.getElementById('texto__procesado');
+        outputDiv.value = desencriptar(text);;
+        document.getElementById("desencriptar_1").style.display = "none";
+        document.getElementById("desencriptar_2").style.display = "flex";
+    });
+});
+
+
+
 
 
 
